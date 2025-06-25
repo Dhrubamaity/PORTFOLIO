@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhrubamaity/PORTFOLIO.git"
+  },
+  "author": "Dhrubajyoti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dhrubamaity/PORTFOLIO/issues"
+  },
+  "homepage": "https://github.com/Dhrubamaity/PORTFOLIO#readme",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "method-override": "^3.0.0"
+  }
+}
