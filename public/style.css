@@ -3,13 +3,15 @@
     padding: 0px;
     font-family: Century Gothic;
     scroll-behavior: smooth;
-    background-color: rgb(255, 249, 239);
+    background-color: rgb(221, 211, 194);
     /* cursor: url("/asset/Telegram.png"),auto; */
 }
-html{
+
+html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 .page1 {
     /* background-image: linear-gradient(45deg, rgb(204, 204, 204),white); */
     width: 100%;
@@ -33,7 +35,7 @@ html{
     right: 0;
     width: 90%;
     z-index: 999;
-    background-color: rgb(255, 249, 239, 0.7);
+    background-color: rgba(245, 247, 235, 0.5);
     display: flex;
     word-spacing: 1px;
     align-items: center;
@@ -42,28 +44,33 @@ html{
     flex-wrap: wrap;
     margin: auto;
     backdrop-filter: blur(3px);
+    border-radius: 0px 0px 30px 30px;
 }
-.name{
+
+.name {
     background-color: transparent;
 }
+
 .name span {
     color: #000;
     font-size: 1.9rem;
     font-weight: 600;
     background-color: transparent;
 }
-.name img{
+
+.name img {
     width: 40px;
     height: 50px;
     margin: 0px 20px;
     background-color: transparent;
 }
+
 nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
-    background-color: rgba(228, 228, 228, 0.1);
+    background-color: transparent;
 }
 
 nav a {
@@ -72,7 +79,7 @@ nav a {
     padding: 0vw 3vw;
     color: black;
     font-weight: 600;
-    background-color: rgba(228, 228, 228, 0.1);
+    background-color: transparent;
 }
 
 
@@ -201,24 +208,37 @@ nav img {
 
 .button {
     width: 10rem;
-    padding: 10px 10px;
+    padding: 15px 15px;
     border-radius: 40px;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(11, 58, 151);
+    border: 1px solid rgb(255, 255, 255);
     color: rgb(11, 58, 151);
     font-size: 1.1rem;
     font-weight: 600;
     margin: 0px 15px;
     margin-top: 3vw;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    box-shadow: 2px 2px 2px -1px rgb(40, 39, 39);
+    transform: translateY(-5px);
+    border: 1px solid rgb(11, 58, 151);
 }
 
 .button_git a {
     text-decoration: none;
     color: rgb(11, 58, 151);
 
+}
+
+.button svg {
+    width: 40px;
+    height: 40px;
 }
 
 .medias {
@@ -238,6 +258,14 @@ nav img {
     background-size: cover;
     padding: 7px;
     border-radius: 40px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.medias img:hover {
+    box-shadow: 2px 2px 2px -1px rgb(40, 39, 39);
+    transform: translateY(-5px);
+    border-top: 2px solid rgb(11, 58, 151);
 }
 
 /* .scroll { */
@@ -269,19 +297,19 @@ nav img {
 
 /* next>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .page2 {
-    width: 90vw;
+    width: 100%;
     font-family: Century Gothic;
     margin: auto;
 }
 
 .page2_head {
-    /* background-color: red; */
     justify-content: center;
     text-align: center;
 }
 
 .page2_head h2 {
-    font-size: 5rem;
+    width: 100%;
+    font-size: 7rem;
 }
 
 .intro {
@@ -296,7 +324,7 @@ nav img {
 
 .page2-img {
     width: 17rem;
-    height:470px;
+    height: 470px;
     margin: 20px;
 }
 
@@ -322,7 +350,7 @@ nav img {
     margin-bottom: 16px;
     font-size: 3rem;
     font-weight: 600;
-    color:  rgb(11, 58, 151);
+    color: rgb(11, 58, 151);
 }
 
 .page3 {
@@ -446,7 +474,7 @@ nav img {
     padding-inline: 10px;
     border-radius: 20px;
     gap: 20px;
-    padding: 20px 0px;
+    padding: 20px 20px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -454,7 +482,7 @@ nav img {
 .boxes4:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-    border-top: 1px solid  rgb(11, 58, 151);
+    border-top: 1px solid rgb(11, 58, 151);
 }
 
 .boxes4 h2 {
@@ -473,7 +501,7 @@ nav img {
     align-items: center;
     text-align: center;
     border-radius: 8px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     padding: 20px 0px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -482,7 +510,7 @@ nav img {
 .box1:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-    border: 1px solid  rgb(11, 58, 151);
+    border: 1px solid rgb(11, 58, 151);
     ;
 }
 
@@ -512,9 +540,11 @@ nav img {
     justify-content: center;
     text-align: center;
 }
-.page5{
+
+.page5 {
     width: 100%;
 }
+
 .contact {
     width: 80%;
     /* height: 60vh; */
@@ -527,24 +557,30 @@ nav img {
 
 .map {
     width: 20rem;
-    height:20rem;
+    height: 20rem;
     margin: auto;
-    
+
 }
-.map img{
+
+.map img {
     border: 1px solid black;
     border-radius: 10px;
     background-size: cover;
     object-fit: cover;
     transition-duration: 0.4s;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.map:hover img{
-    scale: 1.05;
-    box-shadow: 2px 2px 8px rgb(53, 52, 52) ;
+
+.map:hover img {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
-.data{
+
+.data {
     width: 50%;
 }
+
 .data input {
     width: 100%;
     height: 40px;
