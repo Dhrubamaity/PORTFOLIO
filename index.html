@@ -8,39 +8,45 @@
     <link rel="stylesheet" href="./public/style.css">
     <link rel="stylesheet" href="./public/respo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.css">
 </head>
 
 <body>
+    <div class="header">
+        <div class="name">
+            <img src=".\asset\logo.png" alt="loading" style="color: black;">
+            <!-- <span>Dhrubajyoti Maity</span> -->
+        </div>
+        <nav>
+            <a href="">Work</a>
+            <a href="">About</a>
+            <a href="">Ideas</a>
+            <button class="nightmode" onclick="toggleNightmode()" >
+                <img class="moon-icon" src="./asset/moon-icon.png" alt="moon">
+                <img class="sun-icon" style="display: none;" src="./asset/sun-icon.jpg" alt="sun">
+            </button> 
+            <button class="talk" >Contact</button>
+        </nav>
+    </div>
     <div id="main">
+        <div class="curser_circle">
+        </div>
         <div class="page1">
             <!-- <video autoplay muted loop id="myVideo">
                 <source src="asset/bgvid.mp4" type="video/mp4">
               </video> -->
-            <div class="header">
-                <div class="name">
-                    <img src=".\asset\logo.png" alt="loading" style="color: black;">
-                    <span>Dhrubajyoti Maity</span>
-                </div>
-                <nav>
-                    <a href="">Work</a>
-                    <a href="">About</a>
-                    <a href="">Ideas</a>
-                    <a href=""><img src=".\asset\Moon_fill.png" alt=""></a>
-                    <button class="talk">Contact</button>
-                </nav>
-            </div>
-            <!-- <div class="bio"> -->
-            <!-- <h2>Crafting Exceptional Digital Experiences.</h2> -->
-            <!-- </div> -->
             <div class="hero-mid">
-                <div class="myimage"><img src="./asset/MY.jpg" alt="loading" style="color: black;"></div>
+                <div class="myimage">
+                    <img src="./asset/MY.jpg" alt="loading">
+                </div>
                 <div class="bio2">
                     <div class="about">
                         <div class="para">
                             <h1>HELLO,</h1>
-                            <p> I'm Dhrubajyoti Maity, a full stack web developer specializing in crafting responsive,
+                            <span>I'm Dhrubajyoti Maity, a full stack web developer specializing in crafting
+                                responsive,
                                 user-centric Frontend.
-                            </p>
+                            </span>
                         </div>
                     </div>
                     <div class="hero_buttons">
@@ -52,7 +58,7 @@
                                 <polyline points="7 10 12 15 17 10"></polyline>
                                 <line x1="12" y1="15" x2="12" y2="3"></line>
                             </svg>
-                            <a  style="text-decoration: none;" href="./asset/Dhrubajyoti_resume2025.pdf" download>
+                            <a style="text-decoration: none;" href="./asset/Dhrubajyoti_resume2025.pdf" download>
                                 Download resume
                             </a>
                         </button>
@@ -79,21 +85,24 @@
         </div>
         <div class="page2">
             <div class="page2_head">
-                <h2>Crafting Exceptional Digital Experiences.</h2>
+                <h3>Crafting <span>Exceptional</span> Digital <span>Experiences</span>.</h3>
             </div>
             <div class="intro">
                 <div class="page2-bio">
-                    <h2>Who am I</h2>
+                    <h2>About</h2>
                     <p>Aspiring web designer and developer from Kolkata. Currently pursuing a BTech in ECE, I'm
-                        passionately learning web development through Apna College's Delta Batch. Proficient in HTML,
+                        passionately learning web development through Apna College's Delta Batch. Proficient in
+                        HTML,
                         CSS,
-                        JavaScript, Node.js, Express, and EJS. Exploring SQL for database management. Bringing designs
+                        JavaScript, Node.js, Express, and EJS. Exploring SQL for database management. Bringing
+                        designs
                         to
-                        life with Figma, Photoshop, and Blender. Keen on crafting visually stunning and interactive web
+                        life with Figma, Photoshop, and Blender. Keen on crafting visually stunning and interactive
+                        web
                         experiences.</p>
                 </div>
                 <div class="page2-img">
-                    <img src="./asset/MY2.jpg" alt="">
+                    <img src="./asset/profileimg.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -104,7 +113,8 @@
             <div class="project_grid">
                 <div class="project_box1">
                     <div class="project1 project_each">
-                        <h3 style="background-color: transparent; color: white; font-size: 20px;margin: 20px 20px;">SORA
+                        <h3 style="background-color: transparent; color: white; font-size: 20px;margin: 20px 20px;">
+                            SORA
                             : Vertual Assistent</h3>
                     </div>
                     <div class="project2 project_each">
@@ -209,7 +219,12 @@
 
         </div>
 
-        <script src="/app.js"></script>
+        <script src="app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+            integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    </div>
 </body>
 
 </html>
