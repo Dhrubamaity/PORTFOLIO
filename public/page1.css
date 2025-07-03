@@ -1,0 +1,230 @@
+.page1 {
+    /* background-image: linear-gradient(45deg, rgb(204, 204, 204),white); */
+    font-family: 'Century Gothic', sans-serif;
+    margin: 0 10vw;
+    margin-top: 3rem;
+    position: relative;
+    overflow-x: hidden;
+    /* background-color: red; */
+}
+
+
+.name {
+    background-color: transparent;
+    padding-left: 30px;
+}
+
+
+.name img {
+    width: 30px;
+    height: 36px;
+    margin-left: 10px;
+    background-color: transparent;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    background-color: transparent;
+    padding-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 0vw 1.3rem;
+    color: black;
+    font-weight: 600;
+    background-color: transparent;
+    font-size: 12px;
+}
+
+
+nav button {
+    background-color: grey;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: sans-serif;
+    border: none;
+    background-color: #4B6BFE;
+}
+
+.nightmode {
+    background-color: #4B6BFE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 15px;
+}
+
+.nightmode img {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+body.night-mode {
+    background-color: #343434;
+    color: #f0f0f0;
+}
+
+body.night-mode .nightmode {
+    background-color: #666;
+    color: white;
+}
+
+.hero-mid {
+    display: flex;
+    width: 90%;
+    height: 80%;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 7rem 0px 2rem 0px;
+    /* background-color: green; */
+}
+
+/* @media (max-with:900px) { */
+/* .hero-mid { */
+/* display: inline-block; */
+/* } */
+/* } */
+
+.myimage {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    vertical-align: center;
+    margin: 0px 20px;
+    animation: easeRight 0.9s ease forwards; 
+}
+.myimage img {
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.myimage img:hover {
+    box-shadow: 3px 3px 8px -1px rgb(39, 39, 40);
+    transform: translateY(-5px);
+}
+
+.bio2 {
+    width: 45%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+
+.hero-mid .about {
+    padding-top: 5vw;
+    padding-bottom: 1.7rem;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+
+.para h2 {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.hero-mid .about h4 {
+    font-size: 3rem;
+    color: #4b6bfe;
+    margin-left: -2px;
+}
+
+#typewriter::after {
+    content: '|';
+    animation: blink 1s infinite step-end;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.tagline p {
+    font-size: 12px;
+    color: #4b6bfe;
+    font-weight: bold;
+}
+.tagline img{
+    width: 13px;
+    height: 9px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.hero_buttons {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    z-index: 9;
+}
+
+
+.button:hover {
+    box-shadow: 2px 2px 2px -1px rgb(40, 39, 39);
+    transform: translateY(-3px);
+}
+
+.button_git a,
+.button a {
+    text-decoration: none;
+    color: rgb(239, 239, 239);
+
+}
+
+.button svg {
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+
+.medias {
+    display: inline-block;
+    height: 60%;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 6%;
+    z-index: 9;
+}
+
+.medias img {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    padding: 7px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+}
+
+.medias img:hover {
+    box-shadow: 2px 2px 2px -1px rgb(40, 39, 39);
+    transform: translateY(-5px);
+    border-top: 2px solid rgb(11, 58, 151);
+}

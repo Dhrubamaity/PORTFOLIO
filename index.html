@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="./public/page3.css">
+    <link rel="stylesheet" href="./public/page2.css">
+    <link rel="stylesheet" href="./public/page1.css">
     <link rel="stylesheet" href="./public/respo.css">
+    <link rel="stylesheet" href="./public/keyframes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.css">
 </head>
 
 <body>
+    <div class="curser_circle"></div>
     <div class="header">
         <div class="name">
             <img src=".\asset\logo.png" alt="loading" style="color: black;">
@@ -21,34 +26,38 @@
             <a href="">Work</a>
             <a href="">About</a>
             <a href="">Ideas</a>
-            <button class="nightmode" onclick="toggleNightmode()" >
+            <button class="nightmode" onclick="toggleNightmode()">
                 <img class="moon-icon" src="./asset/moon-icon.png" alt="moon">
                 <img class="sun-icon" style="display: none;" src="./asset/sun-icon.jpg" alt="sun">
-            </button> 
-            <button class="talk" >Contact</button>
+            </button>
+            <button class="contact_btn">Contact</button>
         </nav>
     </div>
     <div id="main">
-        <div class="curser_circle">
-        </div>
         <div class="page1">
             <!-- <video autoplay muted loop id="myVideo">
                 <source src="asset/bgvid.mp4" type="video/mp4">
               </video> -->
             <div class="hero-mid">
                 <div class="myimage">
-                    <img src="./asset/MY.jpg" alt="loading">
+                    <img src="./asset/MY3.jpg" alt="loading">
                 </div>
                 <div class="bio2">
                     <div class="about">
                         <div class="para">
-                            <h1>HELLO,</h1>
-                            <span>I'm Dhrubajyoti Maity, a full stack web developer specializing in crafting
+                            <p style="font-weight: bold;">Hi, I am</p>
+                            <h4> <span class="text-blue-500" id="typewriter"></span></h4>
+                            <h2>Specializing in crafting
                                 responsive,
                                 user-centric Frontend.
-                            </span>
+                            </h2>
+                            <br>
+                            <div class="tagline">
+                                <p>- based on <span>INDIA <img src="./asset/indianflag.png" alt=""> </span></p>
+                            </div>
                         </div>
                     </div>
+
                     <div class="hero_buttons">
                         <button class="button resumeBtn ">
                             <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -84,52 +93,55 @@
             <!-- </div> -->
         </div>
         <div class="page2">
-            <div class="page2_head">
-                <h3>Crafting <span>Exceptional</span> Digital <span>Experiences</span>.</h3>
-            </div>
             <div class="intro">
-                <div class="page2-bio">
+                <div class="about">
                     <h2>About</h2>
-                    <p>Aspiring web designer and developer from Kolkata. Currently pursuing a BTech in ECE, I'm
-                        passionately learning web development through Apna College's Delta Batch. Proficient in
-                        HTML,
-                        CSS,
-                        JavaScript, Node.js, Express, and EJS. Exploring SQL for database management. Bringing
-                        designs
-                        to
-                        life with Figma, Photoshop, and Blender. Keen on crafting visually stunning and interactive
-                        web
-                        experiences.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quod eaque quas incidunt dolorem
+                        numquam suscipit aliquam tempore aperiam deleniti rerum omnis eligendi accusamus non deserunt
+                        rem illum dolores, cumque ea odio consectetur qui?</p>
                 </div>
-                <div class="page2-img">
-                    <img src="./asset/profileimg.jpg" alt="">
-                </div>
+                <img class="page2-img" src="./asset/profileimg.jpg" alt="">
             </div>
         </div>
         <div class="project">
-            <h1>PROJECTS</h1>
+            <h1>Projects</h1>
         </div>
         <div class="page3">
             <div class="project_grid">
                 <div class="project_box1">
                     <div class="project1 project_each">
-                        <h3 style="background-color: transparent; color: white; font-size: 20px;margin: 20px 20px;">
-                            SORA
-                            : Vertual Assistent</h3>
+                        <div class="project_about">
+                            <h3>SORA: Vertual Assistent</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis hic asperiores
+                                praesentium,
+                                totam doloremque beatae voluptas porro quam ipsa nobis.</p>
+                        </div>
                     </div>
                     <div class="project2 project_each">
-                        <h3 style="background-color: transparent; color: white; font-size: 20px;margin: 20px 20px;">
-                            Wnderlust : Hotel booking platform</h3>
+                        <div class="project_about">
+                            <h3>WANDERLUST: A hotel booking app</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis hic asperiores
+                                praesentium,
+                                totam doloremque beatae voluptas porro quam ipsa nobis.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="project_box2">
                     <div class="project3 project_each">
-                        <h3 style="background-color: transparent; color: white; font-size: 20px;margin: 20px 20px;">
-                            VERTUAL ASSISTENT</h3>
+                        <div class="project_about">
+                            <h3>WANDERLUST: A hotel booking app</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis hic asperiores
+                                praesentium,
+                                totam doloremque beatae voluptas porro quam ipsa nobis.</p>
+                        </div>
                     </div>
                     <div class="project4 project_each">
-                        <h3 style="background-color: transparent; color: white; font-size: 20px;margin: 20px 20px;">
-                            VERTUAL ASSISTENT</h3>
+                        <div class="project_about">
+                            <h3>WANDERLUST: A hotel booking app</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis hic asperiores
+                                praesentium,
+                                totam doloremque beatae voluptas porro quam ipsa nobis.</p>
+                        </div>
                     </div>
                 </div>
             </div>

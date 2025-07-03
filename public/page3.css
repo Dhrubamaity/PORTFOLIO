@@ -1,0 +1,78 @@
+
+.page3 {
+    width: 90vw;
+    height: 63vh;
+    font-family: Century Gothic;
+    margin: auto;
+}
+.project_grid {
+    margin: auto;
+    margin-top: 20px;
+    display: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.project_each {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease ;
+}
+
+.project_each:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3px);
+}
+.project_each p{
+    color: white;
+}
+.project_about{
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(128, 128, 128, 0.201);
+    backdrop-filter: blur(2px);
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 10px;
+    opacity: 0;
+    transition: transform 0.3s ease;
+}
+.project_each:hover .project_about{
+    opacity: 1;
+    transform: translateY(-5px);
+}
+.project_box1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    margin: 15px 0px;
+}
+
+.project_box2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+}
+
+.project1,.project4 {
+    width: 63%;
+    height: 100%;
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 22px;
+    background-image: url(../asset/v_assistent.jpg);
+    background-size: cover;
+}
+
+.project2 ,.project3 {
+    width: 35%;
+    height: 100%;
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 22px;
+    background-image: url(../asset/hotel.jpg);
+    background-size: cover;
+}

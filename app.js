@@ -17,7 +17,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     const scroll = new LocomotiveScroll({
-        el: document.querySelector('#main'),
+        el: document.querySelector('body'),
         smooth: true
     });
 });
@@ -25,10 +25,15 @@ document.addEventListener('DOMContentLoaded', function () {
 function curserFollower() {
     window.addEventListener("mousemove", function (dets) {
         this.document.querySelector(".curser_circle").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`;
+        this.document.querySelector(".curser_circle").style.opacity = `1`;
     })
 }
 
 curserFollower();
+
+
+// >>>>>>>>>>>>>>> dark mode >>>>>>>>>>>>>>>>>>>>>>
+
 
 function toggleNightmode() {
     let button = document.querySelector(".nightmode")
@@ -48,3 +53,43 @@ function toggleNightmode() {
     }
 }
 
+// >>>>>>>>>>>>>>>>>>>>>>>> typewriter >>>>>>>>>>>>>>>>>>>>
+
+
+ const phrases = ["a Web Developer", "a Web Designer", "Dhruba"];
+    let i = 0, j = 0, currentPhrase = [], isDeleting = false;
+    try{
+        function typeWriter() {
+      const element = document.getElementById('typewriter');
+      const fullPhrase = phrases[i];
+      
+      if (isDeleting) {
+        currentPhrase = fullPhrase.substring(0, j - 1);
+        j--;
+      } else {
+        currentPhrase = fullPhrase.substring(0, j + 1);
+        j++;
+      }
+      
+      element.innerHTML = currentPhrase;
+      
+      let typeSpeed = 100;
+      if (isDeleting) typeSpeed /= 2;
+      
+      if (!isDeleting && currentPhrase === fullPhrase) {
+        typeSpeed = 2000;
+        isDeleting = true;
+      } else if (isDeleting && currentPhrase === '') {
+        isDeleting = false;
+        i = (i + 1) % phrases.length;
+        typeSpeed = 500;
+      }
+      
+      setTimeout(typeWriter, typeSpeed);
+    }
+    
+    document.addEventListener('DOMContentLoaded', typeWriter);
+    }catch(e){
+        console.log(e)
+    }
+    
