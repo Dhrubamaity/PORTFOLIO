@@ -1,7 +1,7 @@
 .page1 {
     /* background-image: linear-gradient(45deg, rgb(204, 204, 204),white); */
     font-family: 'Century Gothic', sans-serif;
-    margin: 0 10vw;
+    margin: 3rem 10vw;
     margin-top: 3rem;
     position: relative;
     overflow-x: hidden;
@@ -141,7 +141,7 @@ body.night-mode .nightmode {
 }
 
 .hero-mid .about h4 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #4b6bfe;
     margin-left: -2px;
 }
@@ -175,6 +175,47 @@ body.night-mode .nightmode {
     object-fit: cover;
 }
 
+.skill_scroll{
+    max-height: 50px;
+    user-select: none;
+    overflow: hidden;
+    border-top:1px solid black ;
+    border-bottom: 1px solid black;
+    padding: 3px 0px;
+    --gap :2rem;
+    gap : var(--gap);
+}
+.skill_scroll ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: var(--gap);
+    animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+    to{
+        transform: translateX(calc(-238% - var(--gap) ));
+    }
+}
+.skill_scroll:hover ul {
+    animation-play-state: paused;
+}
+.skill_scroll ul li{
+    display: flex;
+    justify-content: space-bet;
+    text-align: center;
+    align-items: center;
+    gap:5px;
+}
+.skill_scroll ul li i{
+    color: #4B6BFE;
+}
+.skill_scroll ul li span{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
 .hero_buttons {
     display: flex;
     text-align: center;
@@ -199,6 +240,7 @@ body.night-mode .nightmode {
     width: 20px;
     height: 20px;
     padding-right: 5px;
+    color: white;
 }
 
 .medias {

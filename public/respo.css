@@ -77,3 +77,13 @@
     }
 
 } */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.2rem; /* Smaller font size for smaller screens */
+    }
+    .button {
+        font-size: 0.6rem; /* Adjust button font size */
+        padding: 4px 8px; /* Adjust padding */
+    }
+}

@@ -1,10 +1,10 @@
-
 .page3 {
     width: 90vw;
     height: 63vh;
     font-family: Century Gothic;
     margin: auto;
 }
+
 .project_grid {
     margin: auto;
     margin-top: 20px;
@@ -17,17 +17,21 @@
 
 .project_each {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease ;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .project_each:hover {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.8);
-    transform: translateY(-3px);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgb(11, 58, 151);
 }
-.project_each p{
+
+.project_each p {
     color: white;
 }
-.project_about{
+
+.project_about {
     position: absolute;
     bottom: 0px;
     background-color: rgba(128, 128, 128, 0.201);
@@ -38,10 +42,12 @@
     opacity: 0;
     transition: transform 0.3s ease;
 }
-.project_each:hover .project_about{
+
+.project_each:hover .project_about {
     opacity: 1;
     transform: translateY(-5px);
 }
+
 .project_box1 {
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +65,8 @@
     height: 200px;
 }
 
-.project1,.project4 {
+.project1,
+.project4 {
     width: 63%;
     height: 100%;
     border: 1px solid rgb(4, 4, 4);
@@ -68,7 +75,8 @@
     background-size: cover;
 }
 
-.project2 ,.project3 {
+.project2,
+.project3 {
     width: 35%;
     height: 100%;
     border: 1px solid rgb(4, 4, 4);
