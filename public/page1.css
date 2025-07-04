@@ -2,7 +2,6 @@
     /* background-image: linear-gradient(45deg, rgb(204, 204, 204),white); */
     font-family: 'Century Gothic', sans-serif;
     margin: 3rem 10vw;
-    margin-top: 3rem;
     position: relative;
     overflow-x: hidden;
     /* background-color: red; */
@@ -77,6 +76,15 @@ body.night-mode .nightmode {
     background-color: #666;
     color: white;
 }
+.contact_btn{
+    color: white;
+    padding: 7px 14px;
+    transition-duration: 0.3s;
+
+}
+.contact_btn:hover{
+    scale: 1.05;
+}
 
 .hero-mid {
     display: flex;
@@ -133,6 +141,7 @@ body.night-mode .nightmode {
     width: 100%;
     display: flex;
     padding: 20px;
+    border: none;
 }
 
 .para h2 {
@@ -245,12 +254,15 @@ body.night-mode .nightmode {
 
 .medias {
     display: inline-block;
-    height: 60%;
+    height: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     text-align: center;
     align-items: center;
     width: 6%;
+    gap: 10px;
     z-index: 9;
 }
 
@@ -258,7 +270,7 @@ body.night-mode .nightmode {
     width: 20px;
     height: 20px;
     background-size: cover;
-    padding: 7px;
+    padding: 5px;
     border-radius: 50%;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;

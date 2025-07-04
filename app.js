@@ -17,7 +17,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     const scroll = new LocomotiveScroll({
-        el: document.querySelector('body'),
+        el: document.getElementById('main'),
         smooth: true
     });
 });

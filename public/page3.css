@@ -1,8 +1,9 @@
 .page3 {
     width: 90vw;
-    height: 63vh;
     font-family: Century Gothic;
-    margin: auto;
+    margin:auto;
+    margin-bottom: 5rem;
+    padding: 20px 0px;
 }
 
 .project_grid {
