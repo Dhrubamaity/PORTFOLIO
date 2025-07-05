@@ -1,0 +1,11 @@
+.page5{
+    width: 100%;
+    height: 17vh;
+    background-color: rgb(161, 182, 246);
+    display: flex;
+    justify-content: center;
+    padding:10px 0px;
+}
+.page5 h1{
+    color: red;
+}

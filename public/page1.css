@@ -2,21 +2,44 @@
     /* background-image: linear-gradient(45deg, rgb(204, 204, 204),white); */
     font-family: 'Century Gothic', sans-serif;
     margin: 3rem 10vw;
-    position: relative;
     overflow-x: hidden;
     /* background-color: red; */
 }
 
+.header {
+    position: fixed;
+    top: 0px;
+    left: 10%;
+    width: 80%;
+    z-index: 999;
+    background-color: rgba(180, 171, 155, 0.694);
+    display: flex;
+    word-spacing: 1px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 0px;
+    flex-wrap: wrap;
+    margin: auto;
+    backdrop-filter: blur(3px);
+    border-radius: 0px 0px 30px 30px;
+    animation: easeBottom 0.9s ease-in-out forwards;
+}
 
 .name {
     background-color: transparent;
     padding-left: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.name span{
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
-
 .name img {
-    width: 30px;
-    height: 36px;
+    width: 25px;
+    height: 30px;
     margin-left: 10px;
     background-color: transparent;
 }
@@ -42,7 +65,6 @@ nav a {
 
 
 nav button {
-    background-color: grey;
     border-radius: 20px;
     padding: 6px 12px;
     font-size: 12px;
@@ -76,13 +98,15 @@ body.night-mode .nightmode {
     background-color: #666;
     color: white;
 }
-.contact_btn{
+
+.contact_btn {
     color: white;
     padding: 7px 14px;
     transition-duration: 0.3s;
 
 }
-.contact_btn:hover{
+
+.contact_btn:hover {
     scale: 1.05;
 }
 
@@ -111,27 +135,29 @@ body.night-mode .nightmode {
     align-items: center;
     vertical-align: center;
     margin: 0px 20px;
-    animation: easeRight 0.9s ease forwards; 
+    animation: easeTop 0.9s ease-in-out forwards;
 }
+
 .myimage img {
     width: 100%;
     height: 23rem;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); */
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 
 }
 
-.myimage img:hover {
-    box-shadow: 3px 3px 8px -1px rgb(39, 39, 40);
-    transform: translateY(-5px);
-}
+/* .myimage img:hover { */
+/* box-shadow: 3px 3px 8px -1px rgb(39, 39, 40); */
+/* transform: translateY(-5px); */
+/* } */
 
 .bio2 {
     width: 45%;
     height: 100%;
     /* background-color: red; */
+    animation: easeBottom 1s ease-in forwards;
 }
 
 
@@ -140,6 +166,8 @@ body.night-mode .nightmode {
     padding-bottom: 1.7rem;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding: 20px;
     border: none;
 }
@@ -177,51 +205,59 @@ body.night-mode .nightmode {
     color: #4b6bfe;
     font-weight: bold;
 }
-.tagline img{
+
+.tagline img {
     width: 13px;
     height: 9px;
     background-size: cover;
     object-fit: cover;
 }
 
-.skill_scroll{
+.skill_scroll {
     max-height: 50px;
     user-select: none;
     overflow: hidden;
-    border-top:1px solid black ;
-    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid;
     padding: 3px 0px;
-    --gap :2rem;
-    gap : var(--gap);
+    --gap: 2rem;
+    gap: var(--gap);
 }
-.skill_scroll ul{
+
+.skill_scroll ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
     gap: var(--gap);
     animation: scroll 15s linear infinite;
 }
+
 @keyframes scroll {
-    to{
-        transform: translateX(calc(-238% - var(--gap) ));
+    to {
+        transform: translateX(calc(-238% - var(--gap)));
     }
 }
+
 .skill_scroll:hover ul {
     animation-play-state: paused;
 }
-.skill_scroll ul li{
+
+.skill_scroll ul li {
     display: flex;
     justify-content: space-bet;
     text-align: center;
     align-items: center;
-    gap:5px;
+    gap: 5px;
 }
-.skill_scroll ul li i{
+
+.skill_scroll ul li i {
     color: #4B6BFE;
 }
-.skill_scroll ul li span{
+
+.skill_scroll ul li span {
     font-size: 10px;
-    font-weight: 600;
+    font-weight: 400;
+    text-shadow: none;
 }
 
 
@@ -264,6 +300,7 @@ body.night-mode .nightmode {
     width: 6%;
     gap: 10px;
     z-index: 9;
+    animation: easeLeft 0.9s ease forwards;
 }
 
 .medias img {
@@ -280,5 +317,21 @@ body.night-mode .nightmode {
 .medias img:hover {
     box-shadow: 2px 2px 2px -1px rgb(40, 39, 39);
     transform: translateY(-5px);
-    border-top: 2px solid rgb(11, 58, 151);
+    border-top: 2px solid #4B6BFE;
+}
+
+.logo {
+    position: absolute;
+    width: 100%;
+    z-index: -20;
+    top: 20px;
+    left: 50%;
+    
+}
+
+.logo img {
+    /* background-color: red; */
+    width: 30px;
+    height: 36px;
+    animation: RotateY 3s ease-in-out infinite;
 }

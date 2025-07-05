@@ -16,7 +16,7 @@ html {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-family: sans-serif;
 }
 
@@ -54,22 +54,8 @@ p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 /* ................................... */
-.header {
-    position: fixed;
-    top: 0;
-    left: 5%;
-    width: 90%;
-    z-index: 999;
-    background-color: rgba(180, 171, 155, 0.694);
-    display: flex;
-    word-spacing: 1px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0px;
-    flex-wrap: wrap;
-    margin: auto;
-    backdrop-filter: blur(3px);
-    border-radius: 0px 0px 30px 30px;
+#main {
+    width: 100vw;
 }
 .curser_circle {
     position: relative;
@@ -83,9 +69,6 @@ p {
     opacity: 0;
 }
 
-#main {
-    width: 100vw;
-}
 
 
 

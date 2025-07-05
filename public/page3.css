@@ -1,9 +1,14 @@
 .page3 {
     width: 90vw;
     font-family: Century Gothic;
-    margin:auto;
+    margin: auto;
     margin-bottom: 5rem;
     padding: 20px 0px;
+}
+.prioject_head{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
 }
 
 .project_grid {
@@ -19,6 +24,9 @@
 .project_each {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 
 
