@@ -8,25 +8,25 @@
     width: 70%;
     font-family: Century Gothic;
     margin: auto;
-    padding: 50px;
     display: flex;
+    /* background-color: green; */
     justify-content: space-around;
 }
 
-.data {
-    width: 29rem;
-    border-radius: 20px;
-    padding: 10px;
+.data_4 {
+    min-width: 60%;
+    /* background-color: aqua; */
+    padding-left: 10px;
 }
 
-.data label {
+.data_4 label {
     display: flex;
     margin-top: 10px;
     font-size: 12px;
     font-weight: bold;
 }
 
-.data input {
+.data_4 input {
     width: 80%;
     border-radius: 3px;
     border: none;
@@ -36,7 +36,7 @@
     font-size: 12px;
 }
 
-.data .quary {
+.data_4 .quary {
     height: 70px;
 }
 
@@ -44,30 +44,25 @@
     display: flex;
     justify-content: left;
 }
-
-.data button {
-    margin-top: 30px;
-    color: white;
-    margin-right: 10px;
+.contact_btns .button{
     padding: 7px 20px;
+    color: white;
 }
-
-.data .cancel {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(31, 78, 165);
-    color: black;
+.contact_btns .cancel{
+    border: 1px solid #4B6BFE;
+    color: #4B6BFE;
+    background-color: transparent;
 }
-
 .data_right {
     display: flex;
     flex-direction: column;
-    max-width: 16rem;
+    /* background-color: red; */
 }
 .getintouch {
     margin: 20px auto;
 }
 .getintouch h1 {
-    font-size: 5rem;
+    font-size: 6vw;
 }
 .data_right p{
     padding-left: 1rem;

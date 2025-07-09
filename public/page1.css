@@ -12,12 +12,13 @@
     left: 10%;
     width: 80%;
     z-index: 999;
-    background-color: rgba(180, 171, 155, 0.694);
+    /* background-color: rgba(180, 171, 155, 0.694); */
+    background-color: #a1b6f694;
     display: flex;
     word-spacing: 1px;
     align-items: center;
     justify-content: space-between;
-    padding: 7px 0px;
+    padding: 12px 10px;
     flex-wrap: wrap;
     margin: auto;
     backdrop-filter: blur(3px);
@@ -56,13 +57,16 @@ nav {
 nav a {
     text-decoration: none;
     justify-content: space-between;
-    padding: 0vw 1.3rem;
+    padding: 10px 1.3rem;
     color: black;
     font-weight: 600;
     background-color: transparent;
     font-size: 12px;
+    transition-duration: 0.5s;
 }
-
+nav a:hover{
+    color: #4B6BFE;
+}
 
 nav button {
     border-radius: 20px;

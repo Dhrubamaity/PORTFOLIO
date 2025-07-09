@@ -80,16 +80,18 @@
     height: 100%;
     border: 1px solid rgb(4, 4, 4);
     border-radius: 22px;
-    background-image: url(../asset/v_assistent.jpg);
+    background-image: url(../asset/novabanner.jpg);
     background-size: cover;
 }
 
-.project2,
-.project3 {
+.project2,.project3 {
     width: 35%;
     height: 100%;
     border: 1px solid rgb(4, 4, 4);
     border-radius: 22px;
-    background-image: url(../asset/hotel.jpg);
+    background-image: url(../asset/hotelbanner.jpg);
     background-size: cover;
+}
+.project3{
+    background-image: url(../asset/locationtrac.jpg);
 }
