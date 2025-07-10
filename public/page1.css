@@ -428,12 +428,15 @@ body.night-mode .nightmode {
     /* >>>>>>>>>>>>>>>>>>>>>>> page3>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
     .page3 {
-        width: 96%;
-        padding: 0px 0px;
+        width: 100%;
+        padding: 0px;
+        
     }
 
     .project_box1,
     .project_box2 {
+        width: 100%;
+        margin: 10px 0px;
         display: flex;
         flex-direction: column;
         height: auto;
@@ -443,6 +446,7 @@ body.night-mode .nightmode {
     .project_each {
         width: 100%;
         height: 30vh;
+        margin: 0px;
     }
 
     /* >>>>>>>>>>>>>>>>>>>>>>>>>>>  page4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
