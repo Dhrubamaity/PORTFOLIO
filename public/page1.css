@@ -411,6 +411,11 @@ body.night-mode .nightmode {
         width: 90%;
         /* background-color: #343434; */
     }
+    
+    .about h2{
+       font-weight: bold;
+       
+    }
 
     .medias {
         display: flex;
