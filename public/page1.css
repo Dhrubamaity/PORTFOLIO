@@ -33,7 +33,8 @@
     text-align: center;
     align-items: center;
 }
-.name span{
+
+.name span {
     font-size: 1.3rem;
     font-weight: bold;
 }
@@ -64,7 +65,8 @@ nav a {
     font-size: 12px;
     transition-duration: 0.5s;
 }
-nav a:hover{
+
+nav a:hover {
     color: #4B6BFE;
 }
 
@@ -81,14 +83,14 @@ nav button {
 .nightmode {
     background-color: #4B6BFE;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 6px 15px;
 }
 
 .nightmode img {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: transparent;
 }
@@ -330,7 +332,7 @@ body.night-mode .nightmode {
     z-index: -20;
     top: 20px;
     left: 50%;
-    
+
 }
 
 .logo img {
@@ -338,4 +340,135 @@ body.night-mode .nightmode {
     width: 30px;
     height: 36px;
     animation: RotateY 3s ease-in-out infinite;
+}
+
+@media (max-width:600px) {
+    .header {
+        left: 0;
+        top: 2px;
+        height: 35px;
+        width: 100%;
+        padding: 5px;
+        border-radius: 0px;
+    }
+
+    .header .name img {
+        width: 20px;
+        height: 24px;
+    }
+
+    .header button {
+        width: 30px;
+        height: 30px;
+        padding: auto;
+        background-color: transparent;
+    }
+
+    .header button img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header .contact_btn {
+        display: none;
+    }
+
+    .header nav a {
+        display: none;
+    }
+
+    .page1 {
+        width: 96%;
+        margin: 2px 2px;
+        padding: 0px 0px;
+    }
+
+    .hero-mid {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
+        padding: 5px 5px;
+        margin: 5px auto;
+        margin-top: 40px;
+    }
+
+    .myimage {
+        width: 90%;
+        margin: auto;
+    }
+
+    .myimage img {
+        /* border-radius: 50%; */
+        height: 80vw;
+    }
+
+    .bio2 {
+        width: 90%;
+    }
+
+    .about {
+        width: 90%;
+        /* background-color: #343434; */
+    }
+
+    .medias {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 10px;
+    }
+
+    /* >>>>>>>>>> page2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    .page2 {
+        width: 85%;
+        margin: 7%;
+        padding: 0px 0px;
+    }
+
+    /* >>>>>>>>>>>>>>>>>>>>>>> page3>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+    .page3 {
+        width: 96%;
+        padding: 0px 0px;
+    }
+
+    .project_box1,
+    .project_box2 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+    }
+
+    .project_each {
+        width: 100%;
+        height: 30vh;
+    }
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>  page4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+    .page4 {
+        width: 96%;
+        padding: 0px 0px;
+    }
+    .contact{
+        width:90%;
+        flex-direction: column;
+    }
+    .data_4{
+        width: 90%;
+    }
+    .data_4 input{
+        width: 100%;
+    }
+    .data_right{
+        margin-top: 30px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .getintouch h1{
+        font-size:3.5rem;
+    }
 }
