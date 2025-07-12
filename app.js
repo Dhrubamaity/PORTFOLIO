@@ -56,7 +56,7 @@ function toggleNightmode() {
 // >>>>>>>>>>>>>>>>>>>>>>>> typewriter >>>>>>>>>>>>>>>>>>>>
 
 
- const phrases = ["a Web Developer", "a Web Designer", "Dhruba"];
+ const phrases = ["a Web Developer", "a Web Designer", "Dhruv"];
     let i = 0, j = 0, currentPhrase = [], isDeleting = false;
     try{
         function typeWriter() {

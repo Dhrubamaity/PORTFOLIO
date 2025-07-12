@@ -1,7 +1,7 @@
 .page1 {
     /* background-image: linear-gradient(45deg, rgb(204, 204, 204),white); */
     font-family: 'Century Gothic', sans-serif;
-    margin: 3rem 10vw;
+    margin: 3rem 8vw;
     overflow-x: hidden;
     /* background-color: red; */
 }
@@ -181,12 +181,14 @@ body.night-mode .nightmode {
 .para h2 {
     font-size: 1.5rem;
     font-weight: 100;
+    text-wrap: balance;
 }
 
 .hero-mid .about h4 {
     font-size: 2.8rem;
     color: #4b6bfe;
     margin-left: -2px;
+    line-height: 2.4rem;
 }
 
 #typewriter::after {
@@ -378,13 +380,13 @@ body.night-mode .nightmode {
     }
 
     .page1 {
-        width: 96%;
+        width: 98%;
         margin: 2px 2px;
         padding: 0px 0px;
     }
 
     .hero-mid {
-        width: 90%;
+        width: 97%;
         display: flex;
         flex-direction: column;
         /* background-color: red; */
@@ -400,7 +402,8 @@ body.night-mode .nightmode {
 
     .myimage img {
         /* border-radius: 50%; */
-        height: 80vw;
+        width: 17rem;
+        height: 20rem;
     }
 
     .bio2 {
@@ -414,7 +417,11 @@ body.night-mode .nightmode {
     
     .about h2{
        font-weight: bold;
+       font-size: 1.2rem;
        
+    }
+    .about h4 span{
+        font-size: 1.8rem;
     }
 
     .medias {
@@ -426,7 +433,7 @@ body.night-mode .nightmode {
     /* >>>>>>>>>> page2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
     .page2 {
         width: 85%;
-        margin: 7%;
+        margin: 3%;
         padding: 0px 0px;
     }
 
