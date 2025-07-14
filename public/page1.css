@@ -13,7 +13,7 @@
     width: 80%;
     z-index: 999;
     /* background-color: rgba(180, 171, 155, 0.694); */
-    background-color: #a1b6f694;
+    /* background-color: #a1b6f694; */
     display: flex;
     word-spacing: 1px;
     align-items: center;
@@ -24,6 +24,7 @@
     backdrop-filter: blur(3px);
     border-radius: 0px 0px 30px 30px;
     animation: easeBottom 0.9s ease-in-out forwards;
+    border: 1px solid black;
 }
 
 .name {
@@ -35,7 +36,7 @@
 }
 
 .name span {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
@@ -58,34 +59,38 @@ nav {
 nav a {
     text-decoration: none;
     justify-content: space-between;
-    padding: 10px 1.3rem;
-    color: black;
     font-weight: 600;
     background-color: transparent;
-    font-size: 12px;
+    font-size: 13px;
     transition-duration: 0.5s;
+    color: #4B6BFE;
+    padding: 5px 14px;
+    transition-duration: 0.3s;
 }
 
-nav a:hover {
-    color: #4B6BFE;
+nav a:hover{
+    background-color: #4B6BFE;
+    box-shadow: 2px 2px 80px -1px black;
+    color: white;
+    border-radius: 15px;
 }
 
 nav button {
     border-radius: 20px;
     padding: 6px 12px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     font-family: sans-serif;
     border: none;
-    background-color: #4B6BFE;
+    /* background-color: #4B6BFE; */
 }
 
 .nightmode {
-    background-color: #4B6BFE;
+    /* background-color: #4B6BFE; */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6px 15px;
+    padding: 3px;
 }
 
 .nightmode img {
@@ -96,24 +101,13 @@ nav button {
 }
 
 body.night-mode {
-    background-color: #343434;
+    background-color: #171717ed;
     color: #f0f0f0;
 }
 
 body.night-mode .nightmode {
-    background-color: #666;
-    color: white;
-}
-
-.contact_btn {
-    color: white;
-    padding: 7px 14px;
-    transition-duration: 0.3s;
-
-}
-
-.contact_btn:hover {
-    scale: 1.05;
+    background-color: #66666600;
+    /* color: white; */
 }
 
 .hero-mid {
@@ -189,6 +183,7 @@ body.night-mode .nightmode {
     color: #4b6bfe;
     margin-left: -2px;
     line-height: 2.4rem;
+    padding-bottom: 12px;
 }
 
 #typewriter::after {
@@ -414,13 +409,14 @@ body.night-mode .nightmode {
         width: 90%;
         /* background-color: #343434; */
     }
-    
-    .about h2{
-       font-weight: bold;
-       font-size: 1.2rem;
-       
+
+    .about h2 {
+        font-weight: bold;
+        font-size: 1.2rem;
+
     }
-    .about h4 span{
+
+    .about h4 span {
         font-size: 1.8rem;
     }
 
@@ -442,7 +438,7 @@ body.night-mode .nightmode {
     .page3 {
         width: 100%;
         padding: 0px;
-        
+
     }
 
     .project_box1,
@@ -467,24 +463,29 @@ body.night-mode .nightmode {
         width: 96%;
         padding: 0px 0px;
     }
-    .contact{
-        width:90%;
+
+    .contact {
+        width: 90%;
         flex-direction: column;
     }
-    .data_4{
+
+    .data_4 {
         width: 90%;
     }
-    .data_4 input{
+
+    .data_4 input {
         width: 100%;
     }
-    .data_right{
+
+    .data_right {
         margin-top: 30px;
         display: flex;
         text-align: center;
         align-items: center;
         justify-content: center;
     }
-    .getintouch h1{
-        font-size:3.5rem;
+
+    .getintouch h1 {
+        font-size: 3.5rem;
     }
 }
