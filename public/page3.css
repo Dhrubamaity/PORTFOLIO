@@ -51,6 +51,19 @@
     opacity: 0;
     transition: transform 0.3s ease;
 }
+.project-name{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    opacity: 0.9;
+    mix-blend-mode:overlay;
+    transition: 0.5s ease;
+}
+.project_each:hover .project-name{
+    opacity: 1;
+    mix-blend-mode: lighten;
+}
 
 .project_each:hover .project_about {
     opacity: 1;
@@ -75,7 +88,7 @@
 
 .project1,
 .project4 {
-    width: 63%;
+    width: 57%;
     height: 100%;
     border: 1px solid rgb(4, 4, 4);
     border-radius: 22px;
@@ -84,7 +97,7 @@
 }
 
 .project2,.project3 {
-    width: 35%;
+    width: 41%;
     height: 100%;
     border: 1px solid rgb(4, 4, 4);
     border-radius: 22px;
