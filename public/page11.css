@@ -13,7 +13,7 @@
 .whatido-sub{
     width: 27%;
     padding: 15px;
-    background-image: linear-gradient(#4B6BFE,rgb(1, 24, 1));
+    background-image: linear-gradient(200deg,#4B6BFE,rgb(20, 20, 20));
     color: white;
     border-radius: 10px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
@@ -21,14 +21,18 @@
 }
 .whatido-sub:hover{
     transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px #4B6BFE;
+    /* box-shadow: 0 7px 5px -3px #4B6BFE; */
+    border-bottom: 1px solid #4b6bfe;
 }
 .whatido-sub h1{
     line-height: 45px;
     /* margin-bottom: 20px; */
+    text-shadow: -1px 4px 2px rgb(24, 24, 24);
 }
 .whatido-sub p{
     margin: 25px 0px 7px 0px;
+    color: rgb(214, 214, 214);
+     text-shadow: -1px 1px 1px rgb(50, 50, 50);
 }
 .whatido-sub ul{
     font-size: 10px;
@@ -37,6 +41,7 @@
     padding: 10px 0px ;
     display: flex;
     flex-wrap: wrap;
+    
 }
 .whatido-sub ul li{
     white-space: nowrap;
@@ -54,7 +59,7 @@
     }
     .whatido{
         margin-top: 20px;
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -62,7 +67,6 @@
         gap: 10px;
     }
     .whatido-sub{
-        border: 1px solid black;
         border-radius: 10px;
         width: 87%;
     }

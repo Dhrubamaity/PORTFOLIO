@@ -28,10 +28,6 @@
     width: 35%;
 }
 
-.right_con {
-    margin-top: 30px;
-}
-
 @media (max-width:760px) {
     .page2 {
         width: 100%;

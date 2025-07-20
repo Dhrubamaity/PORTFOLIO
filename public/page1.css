@@ -22,9 +22,9 @@
     flex-wrap: wrap;
     margin: auto;
     backdrop-filter: blur(3px);
-    border-radius: 0px 0px 30px 30px;
+    border-radius: 0px 0px 10px 10px;
     animation: easeBottom 0.9s ease-in-out forwards;
-    border: 1px solid black;
+    border-bottom: 1px solid rgb(188, 188, 188);
 }
 
 .name {
@@ -59,7 +59,8 @@ nav {
 nav a {
     text-decoration: none;
     justify-content: space-between;
-    /* font-weight: 600; */
+    font-size: 8px;
+    font-weight: 600;
     background-color: transparent;
     font-size: 13px;
     transition-duration: 0.5s;
