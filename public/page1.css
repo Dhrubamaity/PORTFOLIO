@@ -3,17 +3,15 @@
     font-family: 'Century Gothic', sans-serif;
     margin: 3rem 8vw;
     overflow-x: hidden;
-    /* background-color: red; */
+    
 }
 
 .header {
     position: fixed;
     top: 0px;
-    left: 10%;
-    width: 80%;
-    z-index: 999;
-    /* background-color: rgba(180, 171, 155, 0.694); */
-    /* background-color: #a1b6f694; */
+    left: 17%;
+    width: 60%;
+    z-index: 99;
     display: flex;
     word-spacing: 1px;
     align-items: center;
@@ -22,7 +20,7 @@
     flex-wrap: wrap;
     margin: auto;
     backdrop-filter: blur(3px);
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 20px;
     animation: easeBottom 0.9s ease-in-out forwards;
     border-bottom: 1px solid rgb(188, 188, 188);
 }
@@ -38,6 +36,7 @@
 .name span {
     font-size: 1.6rem;
     font-weight: bold;
+    color:#4b6bfe;
 }
 
 .name img {
@@ -47,7 +46,7 @@
     background-color: transparent;
 }
 
-nav {
+nav {    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -59,14 +58,13 @@ nav {
 nav a {
     text-decoration: none;
     justify-content: space-between;
-    font-size: 8px;
     font-weight: 600;
     background-color: transparent;
-    font-size: 13px;
     transition-duration: 0.5s;
-    color: #4B6BFE;
+    color: #A59D84;
     padding: 5px 14px;
     transition-duration: 0.3s;
+    font-size: 12PX;
 }
 
 nav a:hover{
@@ -107,7 +105,7 @@ body.night-mode {
 }
 
 body.night-mode .nightmode {
-    background-color: #66666600;
+    background-color: #a3a3a300;
     /* color: white; */
 }
 
@@ -177,11 +175,12 @@ body.night-mode .nightmode {
     font-size: 1.5rem;
     font-weight: 100;
     text-wrap: balance;
+    font-weight: bold;
 }
 
 .hero-mid .about h4 {
     font-size: 2.8rem;
-    color: #4b6bfe;
+    color: #4B6BFE;
     margin-left: -2px;
     line-height: 2.4rem;
     padding-bottom: 12px;
@@ -206,7 +205,7 @@ body.night-mode .nightmode {
 
 .tagline p {
     font-size: 12px;
-    color: #4b6bfe;
+    color: #A59D84;
     font-weight: bold;
 }
 
@@ -233,7 +232,7 @@ body.night-mode .nightmode {
     display: flex;
     justify-content: space-around;
     gap: var(--gap);
-    animation: scroll 15s linear infinite;
+    animation: scroll 19s linear infinite;
 }
 
 @keyframes scroll {
@@ -255,7 +254,7 @@ body.night-mode .nightmode {
 }
 
 .skill_scroll ul li i {
-    color: #4B6BFE;
+    color: #A59D84;
 }
 
 .skill_scroll ul li span {
@@ -281,14 +280,14 @@ body.night-mode .nightmode {
 .button_git a,
 .button a {
     text-decoration: none;
-    color: rgb(239, 239, 239);
+    color: white;
 }
 
 .button svg {
     width: 20px;
     height: 20px;
     padding-right: 5px;
-    color: white;
+    color: #D7D3BF;
 }
 
 .medias {
@@ -314,7 +313,7 @@ body.night-mode .nightmode {
     border-radius: 50%;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: white;
+    background-color: #D7D3BF;
 }
 
 .medias img:hover {
@@ -323,17 +322,28 @@ body.night-mode .nightmode {
     border-top: 2px solid #4B6BFE;
 }
 
-.logo {
-    position: absolute;
-    width: 100%;
-    z-index: -20;
-    top: 20px;
-    left: 50%;
-
-}
+/* .logo,.logo_sub { */
+    /* position: absolute; */
+    /* width: 55%; */
+    /* height: 330px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* z-index: -90; */
+    /* bottom: -30%; */
+    /* opacity: 0.4; */
+    /* left: 40%; */
+    /* background-color: rgba(175, 23, 240, 0.856); */
+    /* border-radius: 50%; */
+    /* filter: blur(110px); */
+/* } */
+/* .logo_sub{ */
+    /* position: absolute; */
+    /* top: 0px; */
+    /* left: -40%; */
+/* } */
 
 .logo img {
-    /* background-color: red; */
     width: 30px;
     height: 36px;
     animation: RotateY 3s ease-in-out infinite;
