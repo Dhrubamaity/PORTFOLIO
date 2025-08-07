@@ -60,7 +60,8 @@ p {
 }
 /* ................................... */
 #main {
-    width: 100vw;
+    max-width: 1200px;
+    margin: auto;
 }
 .curser_circle {
     position: relative;
@@ -69,7 +70,7 @@ p {
     z-index: 9999;
     width: 10px;
     height: 10px;
-    background-color: rgb(157, 255, 0);
+    background-color: rgb(255, 0, 0);
     border-radius: 50%;
     opacity: 0;
 }

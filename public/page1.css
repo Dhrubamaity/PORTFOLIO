@@ -1,9 +1,8 @@
 .page1 {
     /* background-image: linear-gradient(45deg, rgb(204, 204, 204),white); */
     font-family: 'Century Gothic', sans-serif;
-    margin: 3rem 8vw;
     overflow-x: hidden;
-    
+
 }
 
 .header {
@@ -20,7 +19,7 @@
     flex-wrap: wrap;
     margin: auto;
     backdrop-filter: blur(3px);
-    border-radius: 20px;
+    border-radius: 13px;
     animation: easeBottom 0.9s ease-in-out forwards;
     border-bottom: 1px solid rgb(188, 188, 188);
 }
@@ -61,7 +60,7 @@ nav a {
     font-weight: 600;
     background-color: transparent;
     transition-duration: 0.5s;
-    color: #A59D84;
+    color: #4B6BFE;
     padding: 5px 14px;
     transition-duration: 0.3s;
     font-size: 12PX;
@@ -100,7 +99,7 @@ nav button {
 }
 
 body.night-mode {
-    background-color: #171717ed;
+    background-color: #090909ed;
     color: #f0f0f0;
 }
 
@@ -111,11 +110,11 @@ body.night-mode .nightmode {
 
 .hero-mid {
     display: flex;
-    width: 90%;
+    width: 100%;
     height: 80%;
     justify-content: space-around;
     margin: 0 auto;
-    padding: 7rem 0px 2rem 0px;
+    padding: 7rem 0px 6rem 0px;
     /* background-color: green; */
 }
 
@@ -127,21 +126,22 @@ body.night-mode .nightmode {
 
 .myimage {
     width: 30%;
-    height: 90%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     text-align: center;
     align-items: center;
     vertical-align: center;
     margin: 0px 20px;
+    padding-top: 1rem;
     animation: easeTop 0.9s ease-in-out forwards;
 }
 
 .myimage img {
-    width: 100%;
-    height: 23rem;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 50%;
     /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); */
     /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 
@@ -153,15 +153,14 @@ body.night-mode .nightmode {
 /* } */
 
 .bio2 {
-    width: 45%;
+    width: 40%;
     height: 100%;
-    /* background-color: red; */
     animation: easeBottom 1s ease-in forwards;
 }
 
 
 .hero-mid .about {
-    padding-top: 5vw;
+    padding-top: 2rem;
     padding-bottom: 1.7rem;
     width: 100%;
     display: flex;
@@ -173,9 +172,8 @@ body.night-mode .nightmode {
 
 .para h2 {
     font-size: 1.5rem;
-    font-weight: 100;
     text-wrap: balance;
-    font-weight: bold;
+    font-weight: 300;
 }
 
 .hero-mid .about h4 {
@@ -205,7 +203,7 @@ body.night-mode .nightmode {
 
 .tagline p {
     font-size: 12px;
-    color: #A59D84;
+    color: #4B6BFE;
     font-weight: bold;
 }
 
@@ -220,8 +218,6 @@ body.night-mode .nightmode {
     max-height: 50px;
     user-select: none;
     overflow: hidden;
-    border-top: 1px solid black;
-    border-bottom: 1px solid;
     padding: 3px 0px;
     --gap: 2rem;
     gap: var(--gap);
@@ -254,12 +250,11 @@ body.night-mode .nightmode {
 }
 
 .skill_scroll ul li i {
-    color: #A59D84;
+    border: none;
 }
 
 .skill_scroll ul li span {
     font-size: 10px;
-    font-weight: 400;
     text-shadow: none;
 }
 
@@ -269,6 +264,7 @@ body.night-mode .nightmode {
     text-align: center;
     width: 100%;
     z-index: 9;
+    padding: 10px;
 }
 
 
@@ -287,7 +283,7 @@ body.night-mode .nightmode {
     width: 20px;
     height: 20px;
     padding-right: 5px;
-    color: #D7D3BF;
+    color: white;
 }
 
 .medias {
@@ -303,17 +299,18 @@ body.night-mode .nightmode {
     gap: 10px;
     z-index: 9;
     animation: easeLeft 0.9s ease forwards;
+    /* background-color: red; */
 }
 
 .medias img {
     width: 20px;
     height: 20px;
     background-size: cover;
-    padding: 5px;
+    padding: 2px;
     border-radius: 50%;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #D7D3BF;
+    background-color: #ffffff;
 }
 
 .medias img:hover {
@@ -349,7 +346,7 @@ body.night-mode .nightmode {
     animation: RotateY 3s ease-in-out infinite;
 }
 
-@media (max-width:600px) {
+@media (max-width:680px) {
     .header {
         left: 0;
         top: 2px;
@@ -376,10 +373,6 @@ body.night-mode .nightmode {
         height: 20px;
     }
 
-    .header .contact_btn {
-        display: none;
-    }
-
     .header nav a {
         display: none;
     }
@@ -399,16 +392,21 @@ body.night-mode .nightmode {
         margin: 5px auto;
         margin-top: 40px;
     }
+    .hero_buttons .button{
+        padding:10px 20px ;
+        font-size: 12px;
+    }
 
     .myimage {
         width: 90%;
         margin: auto;
+        justify-content: center;
     }
 
     .myimage img {
         /* border-radius: 50%; */
         width: 17rem;
-        height: 20rem;
+        height: 17rem;
     }
 
     .bio2 {
@@ -434,6 +432,11 @@ body.night-mode .nightmode {
         display: flex;
         flex-direction: row;
         margin: 20px 10px;
+        padding-left: 10px;
+    }
+    .medias img{
+        width: 30px;
+        height: 30px;
     }
 
     /* >>>>>>>>>> page2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
